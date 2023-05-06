@@ -12,7 +12,7 @@
 <img src="{{employee.src}}" width="200" alt="{{employee.alt}}">
 
 <p (mouseover)="overst()">{{name}}</p>
-<input type="button" value="Save" (click)="paaKlikkLagre()" [disabled]="isOn">
+<input type="button" value="Save" (click)="paaKlikkLagre()" [disabled]="isOff">
 <br/>
 <br/>
 <input type="text" placeholder="input here and click outside" (change)="forandring()">
@@ -30,4 +30,4 @@
 <input type="text" placeholder="color by class binding" [id]="textid" [class.forfarger]="isOn" class="heighting">
 <br/>
 <br/>
-<img [attr.src]="src2" width="200" alt="attribute binding">
+<img [attr.src]="src2" [attr.width]=genislik alt="attribute binding">
