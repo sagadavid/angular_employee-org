@@ -9,7 +9,7 @@ export class AppComponent {
   name:string='david saga';
   address:string='svale'
   isOn = true;
-
+src2="https://images.unsplash.com/photo-1683220643085-1fa0ad87a1a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
   textid = 'demoId';//a property now
 
   // myClasses = 'colorCode heighting';//string usage, value defined in css file
