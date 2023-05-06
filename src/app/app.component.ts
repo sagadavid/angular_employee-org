@@ -12,7 +12,8 @@ export class AppComponent {
   textid = 'demoId';//a property now
 
   // myClasses = 'colorCode heighting';//string usage, value defined in css file
-  myClasses = ['colorCode','heighting'];//alternative usage
+  // myClasses = ['colorCode','heighting'];//alternative usage
+  myClasses = {'colorCode':true,'heighting':false};//selective usage of classes
   getName(data:number):string{
     if (data > 0)
 return 'address is '+ this.address+data;
