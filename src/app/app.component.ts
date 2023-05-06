@@ -14,7 +14,8 @@ export class AppComponent {
 
   // myClasses = 'colorCode heighting';//string usage, value defined in css file
   // myClasses = ['colorCode','heighting'];//alternative usage
-  myClasses = {'colorCode':this.isOn,'heighting':false};//selective usage of classes
+  myClasses = {'colorCode':this.isOn,'heighting':this.feiler};//selective usage of classes
+  
   getName(data:number):string{
     if (data > 0)
 return 'address is '+ this.address+data;
@@ -41,7 +42,8 @@ overst():void{
 
 forandring():void{
 this.name="tekst forandret"
-
 }
+
+feiler():boolean{return false};
 
 }
