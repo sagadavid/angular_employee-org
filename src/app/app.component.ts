@@ -9,6 +9,8 @@ export class AppComponent {
   name:string='david saga';
   address:string='svale'
 
+  textid = 'demoId';//a property now
+
   getName(data:number):string{
     if (data > 0)
 return 'address is '+ this.address+data;
