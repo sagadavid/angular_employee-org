@@ -8,12 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name:string='david saga';
   address:string='svale'
+  isOn = true;
 
   textid = 'demoId';//a property now
 
   // myClasses = 'colorCode heighting';//string usage, value defined in css file
   // myClasses = ['colorCode','heighting'];//alternative usage
-  myClasses = {'colorCode':true,'heighting':false};//selective usage of classes
+  myClasses = {'colorCode':this.isOn,'heighting':false};//selective usage of classes
   getName(data:number):string{
     if (data > 0)
 return 'address is '+ this.address+data;
