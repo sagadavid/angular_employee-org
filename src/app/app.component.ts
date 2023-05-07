@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,17 +9,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string = 'david saga';
   address: string = 'svale';
+  //property binding
   isOn = true;
   isOff = false;
   src2 =
     'https://images.unsplash.com/photo-1683220643085-1fa0ad87a1a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80';
   genislik = 500;
-
+  //property binding
   textid = 'demoId'; //a property now
-
+  //class binding
   // myClasses = 'colorCode heighting';//string usage, value defined in css file
   // myClasses = ['colorCode','heighting'];//alternative usage
   myClasses = { colorCode: this.isOn, heighting: this.feiler() }; //selective usage of classes
+  //style binding from component
+  componentStyle = 'color:green; font:italic';
 
   getName(data: number): string {
     if (data > 0) return 'address is ' + this.address + data;
@@ -26,6 +30,7 @@ export class AppComponent {
       return 'no address to return';
     }
   }
+
   employees = ['you', 'me', 'someone else'];
   employee = {
     title: 'software developer',
